@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>JM-Blog - A propos</title>
+
+	<link rel="shortcut icon" href="../static/about/images/gt_favicon.png">
+
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../static/about/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/about/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../static/about/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="../static/about/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../static/about/js/html5shiv.js"></script>
+	<script src="../static/about/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template">   3 Delta </a> -->
+        <a class="navbar-brand" href="{% url 'homepage:index' %}"> JM-Blog </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="{% url 'homepage:index' %}">Homepage</a></li>
+			<li><a href="/articles">Articles</a></li>
+            <li><a href="{% url 'contact:contact' %}">Contact</a></li>
+          <li  class="active"><a href="{% url 'about:about' %}">A propos</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/articles">Articles</a></li>
+              <li class="active"><a href="">Portfolio</a></li>
+            </ul>
+          </li>
+
+          <li><a class="btn" href="signin.html">Se Connecter / S'enregistrer</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="{% url 'homepage:index' %}">Homepage</a></li>
+			<li class="active">A propos</li>
+		</ol>
+
+		<div class="row">
+
+			<!-- Article right content -->
+			<article class="col-sm-12 maincontent">
+				<br>
+				<br>
+				<center><img src="../static/about/images/3Delta.jpg" alt="" class="img-rounded mx-auto d-block" width="300" > </center>
+				<br>
+				<center><p>Website Version : Alpha 0.1 Janvier 2021</p></center>
+				<center><p>Design conçu par : <a href="http://gettemplate.com/" rel="designer">gettemplate</a></p></center>
+				<center><p>Back-end et adaptations du design par : <a href="{% url 'about:about' %}">Michel Jonathan</a></p></center>
+				<center><p>Langages & Framework's utiliser: Python, Django, Postgresql, HTML, CSS, Javascript, Github, Pythonanywhere.</p> </center>
+				<center><p>N'hésitez pas à nous contacter <a href="{% url 'contact:contact' %}">ici</a> si vous rencontrer des bugs !</p></center>
+				<center><p>Le site 3Delta est en cours de développement, ce qui signifie que la version d'aurjourd'hui est susceptible d'évoluer afin d'y implémenter des fonctionnalités pour de futurs besoins.</p></center>
+
+			</article>
+			<!-- /Article -->
+            	<!-- Article left content -->
+			<article class="col-sm-12 maincontent">
+
+				<center><h3>A propos de Michel Jonathan :</h3></center>
+                <br>
+				<center><img src="../static/about/images/about_jonathan_profil.png" alt="" class="img-rounded" width="300" ></center>
+				<br>
+				<center><p>Lorsque j'etait un très jeune enfant, mon parrain moi même et son fils, nous levions la nuit quand la mamie était endormi, pour jouer à la Nintendo et la Sega. Coca à la main et biberon chargé, nous faisions des nocturnes en avalant quantités de chips et pixels. A cet époque j’était déjà absorber par l’écran et les vieilles couleurs de jeux vidéos aux lueurs du tube cathodique et de la lune qui ne manquer pas de taillé nos cernes de geeks. Un peu plus tard , nous faisions l’acquisition d’un Ordinateur équipé du tout nouveau Système d’exploitation à la mode, windows 3.1, et donc nos premières aventures avec les jeux vidéos PC et les disquettes ne manquèrent pas de me scotché. J’ai eu l’opportunité de parcrourir différents systèmes et machines depuis et jusqu’à nos jours, qui lorsque, tomber en panne, ayant peu de moyens, nous partageons encore des missions sauvetage afin de réparer et étancher notre soif d’informatiques. A l’âge de 30 ans, depuis mes premiers pas en tant que PAREN sélectionnée pour parcticiper à la formation du WAGON je ne cesse de m’exercé à codé tout type de projets personnelle et concrétise mes passions acquise enfant. Je remercie Mathieu Bonfils @Le Wagon et Emmanuelle Erasquero @SIMPLON qui m’ont permis cette reconversion professionnelle. Je souhaite prendre plus d’assurance dans le domaine du développement, j’expérimente plusieurs langages par passion et curiosité. Cela me permet de comprendre ce que j’aime sans pour autant devoir tiré un trait sur des expériences passé, qui mise bout a bout m’aideront a concrétisé une passion que j’ai depuis toujours.</p></center>
+				<br>
+			</article>
+			<!-- /Article -->
+
+
+
+		</div>
+	</div>	<!-- /container -->
+
+
+
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contactez nous</h3>
+						<div class="widget-body">
+								<a href="{% url 'contact:contact' %}">Contact</a><br>
+								<br>
+								<a href="{% url 'homepage:index' %}">Website</a><br>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Suivez nous</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Commentaires d'usages</h3>
+						<div class="widget-body">
+							<p>Veillez à respecter le(s) destinataire(s) de vos messages.</p>
+							<p>Nous sommes tout à fait conscients que de potentielles erreurs peuvent se glisser au sein du site, mais votre avis compte à partir du moment qu'il est constructif et bienveillant.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="{% url 'homepage:index' %}">Homepage</a> |
+								<a href="{% url 'about:about' %}">A propos</a> |
+								<a href="{% url 'contact:contact' %}">Contact</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2020,Made by <a href="{% url 'about:about' %}">Michel Jonathan</a>. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../static/about/js/headroom.min.js"></script>
+	<script src="../static/about/js/jQuery.headroom.min.js"></script>
+	<script src="../static/about/js/template.js"></script>
+
+</body>
+</html>

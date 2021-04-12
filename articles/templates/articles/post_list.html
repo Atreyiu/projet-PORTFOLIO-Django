@@ -1,0 +1,38 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for post in posts %}
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+          <center><p>  {{ post.published_date }} </p></center>
+        <center><h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3></center>
+        <center><p>{{ post.text|linebreaksbr }}</p></center>
+        <center><p><a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary" role="button">Parcourir</a> </p></center>
+      </div>
+    </div>
+  </div>
+
+
+<!-- OLD SIMPLE LAYOUT -->
+
+<!--        <div class="post">-->
+<!--            <div class="date">-->
+<!--                {{ post.published_date }}-->
+<!--            </div>-->
+<!--            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>-->
+<!--            <p>{{ post.text|linebreaksbr }}</p>-->
+<!--        </div>-->
+
+
+    {% endfor %}
+{% endblock %}
+
+
+
+
+

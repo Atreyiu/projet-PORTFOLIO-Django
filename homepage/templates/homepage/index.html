@@ -1,0 +1,257 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>JM-Blog - Homepage</title>
+
+	<link rel="shortcut icon" href="../static/homepage/images/gt_favicon.png">
+
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../static/homepage/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/homepage/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../static/homepage/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="../static/homepage/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../static/homepage/js/html5shiv.js"></script>
+	<script src="../static/homepage/js/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template">   3 Delta </a> -->
+        <a class="navbar-brand" href=""> JM-Blog </a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="">Homepage</a></li>
+					<li><a href="/articles">Articles</a></li>
+            		<li><a href="{% url 'contact:contact' %}">Contact</a></li>
+					<li><a href="{% url 'about:about' %}">A propos</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="/articles">Articles</a></li>
+							<li class="active"><a href="">Portfolio</a></li>
+						</ul>
+					</li>
+
+					<li><a class="btn" href="signin.html">Se Connecter / S'enregistrer</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+
+        <!-- <center><img src="assets/images/logo.png" alt="Progressus HTML5 template"></center>
+				<h1 class="lead">3Delta</h1> -->
+        <h2>3Delta</h2>
+				<p class="tagline">Site de Michel Jonathan - Réalisations / Articles <a href="{% url 'about:about' %}"> ( En savoir plus )</a></p>
+				<p><a class="btn btn-default btn-lg" href="{% url 'contact:contact' %}" role="button">Contact</a> <a class="btn btn-action btn-lg" href="{% url 'about:about' %}" role="button">A propos</a></p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Intro -->
+	<div class="container text-center">
+		<br> <br>
+		<h2 class="thin">Développeur, Autodidacte, Passioné</h2>
+		<p class="text-muted">
+      En parcourant le site vous découvrirez quelques articles et réalisations autour de la programmation numérique et de l'impression 3D.
+		</p>
+	</div>
+	<!-- /Intro-->
+
+	<!-- Highlights - jumbotron -->
+	<div class="jumbotron top-space">
+		<div class="container">
+
+			<h3 class="text-center thin">Les raisons pour lesquelles vous devriez sûrement jetter un oeil</h3>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Programmation numérique</h4></div>
+					<div class="h-body text-center">
+						<p>Du contenu centré sur la programmation dans divers langages et domaines d'applications. Articles, News, Tutos, Pense-bêtes, Lignes de codes.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Electricité et Electronique</h4></div>
+					<div class="h-body text-center">
+						<p>Certains projets peuvent nous mener à toucher un peu à tout ! Notamment à l'électronique qui nous permet de découvrir les fonctionnements les plus basiques jusqu'à l'élaboration de projets plus ambitieux.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Made with <3</h4></div>
+					<div class="h-body text-center">
+						<p>Du contenu rédigé par des passionnés dans divers domaines. Chacun souhaitant partager ce qu'il a appris ou fait.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Les collaborations</h4></div>
+					<div class="h-body text-center">
+						<p>Parfois il est nécessaire de piocher dans les compétences d'amis et ainsi transmettre des compétences afin de réaliser certaines choses en commun.</p>
+					</div>
+				</div>
+			</div> <!-- /row  -->
+
+		</div>
+	</div>
+	<!-- /Highlights -->
+
+	<!-- container -->
+	<div class="container">
+
+		<h2 class="text-center top-space">Questions fréquentes</h2>
+		<br>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Quel est votre parcours d'études ?</h3>
+				<p>Après le Lycée je me suis orienté vers un parcours professionnel dans la Production Mécanique Informatique. Par la suite j'ai entrepris une reconversion professionnelle à <a target="_blank" href="https://www.lewagon.com/fr/marseille">Le Wagon Marseille</a> et <a target="_blank" href="https://paca.simplon.co/">Simplon Marseille</a>, 2 écoles de formation dans le développement Web Full-Stack et Data. Aujourd'hui je continue à alimenter mes connaissances dans divers langages de programmation pour satisfaire une passion et une curiosité, ainsi que le plaisir de donner vie à des idées.</p>
+			</div>
+			<div class="col-sm-6">
+				<h3>Pourquoi ce site ?</h3>
+				<p>
+          Je ne communique que très peu sur les réseaux sociaux, divers projets que je réalise pourraient intéresser des personnes curieuses ou leur donner envie de me contacter.Crée moi-même la plateforme me permet de partager ce que je réalise m'autorisant ainsi la personnalisation.
+			</div>
+		</div> <!-- /row -->
+
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Que contient t'il ?</h3>
+				<p>
+					Ce site contient un portfolio dans lequel je partage mes réalisations ainsi que des articles de différents domaines.
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<h3>Contact, Mail ?</h3>
+				<p>Une rubrique dédiée aux profils est disponible<a href=""> ici</a>. </p>
+			</div>
+		</div> <!-- /row -->
+
+
+</div>	<!-- /container -->
+
+	<!-- Social links. @TODO: replace by link/instructions in template -->
+	<section id="social">
+		<div class="container">
+			<div class="wrapper clearfix">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_linkedin_counter"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				</div>
+				<!-- AddThis Button END -->
+			</div>
+		</div>
+	</section>
+	<!-- /social links -->
+
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contactez nous</h3>
+						<div class="widget-body">
+								<a href="{% url 'contact:contact' %}">Contact</a><br>
+								<br>
+								<a href="{% url 'homepage:index' %}">Website</a><br>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Suivez nous</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Commentaires d'usages</h3>
+						<div class="widget-body">
+							<p>Veillez à respecter le(s) destinataire(s) de vos messages.</p>
+							<p>Nous sommes tout à fait conscients que de potentielles erreurs peuvent se glisser au sein du site, mais votre avis compte à partir du moment qu'il est constructif et bienveillant.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="{% url 'homepage:index' %}">Homepage</a> |
+								<a href="{% url 'about:about' %}">A propos</a> |
+								<a href="{% url 'contact:contact' %}">Contact</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2020,Made by <a href="{% url 'about:about' %}">Michel Jonathan</a>. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../static/homepage/js/headroom.min.js"></script>
+	<script src="../static/homepage/js/jQuery.headroom.min.js"></script>
+	<script src="../static/homepage/js/template.js"></script>
+
+</body>
+</html>
